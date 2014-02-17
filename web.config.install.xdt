@@ -20,7 +20,7 @@
   </system.webServer>
   <system.webServer>
     <modules>
-      <add xdt:Transform="Insert" name="RemoveHeaders" type="DigitalTechnologies.RemoveHeaders.RemoveHeadersModule, DigitalTechnologies.RemoveHeaders"/>
+      <add xdt:Transform="InsertIfMissing" name="RemoveHeaders" type="DigitalTechnologies.RemoveHeaders.RemoveHeadersModule, DigitalTechnologies.RemoveHeaders"/>
     </modules>
     <httpProtocol>
       <customHeaders>
