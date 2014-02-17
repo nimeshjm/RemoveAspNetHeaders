@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>RemoveASPNETheaders</id>
+        <version>1.0.0</version>
+        <title>Remove ASP.NET headers</title>
+        <authors>Nimesh Manmohanlal</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This package will reduce the server information that is disclosed to your visitors.
+It removes the following http headers:
+"Server"
+"X-AspNet-Version"
+"X-AspNetMvc-Version"
+"X-Powered-By"</description>
+        <copyright>Digital Technologies Ltd.</copyright>
+        <language>en-GB</language>
+        <tags>security, pentest, asp.net, headers</tags>
+    </metadata>
+    <files>
+        <file src="web.config.install.xdt" target="content\web.config.install.xdt" />
+        <file src="bin\Debug\RemoveHeaders.dll" target="lib\net20\RemoveHeaders.dll" />
+    </files>
+</package>

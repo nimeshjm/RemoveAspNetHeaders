@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.web>
+    <httpRuntime xdt:Transform="InsertIfMissing" enableVersionHeader="false" />
+    <httpRuntime xdt:Transform="SetAttributes(enableVersionHeader)" enableVersionHeader="false" />
+  </system.web>
+  <system.webServer xdt:Transform="InsertIfMissing">
+  </system.webServer>
+  <system.webServer>
+    <modules xdt:Transform="InsertIfMissing">
+    </modules>
+    <httpProtocol xdt:Transform="InsertIfMissing">
+    </httpProtocol>
+  </system.webServer>
+  <system.webServer>
+    <httpProtocol>
+      <customHeaders xdt:Transform="InsertIfMissing">
+      </customHeaders>
+    </httpProtocol>
+  </system.webServer>
+  <system.webServer>
+    <modules>
+      <add xdt:Transform="Insert" name="RemoveHeaders" type="RemoveHeaders.RemoveHeadersModule, RemoveHeaders"/>
+    </modules>
+    <httpProtocol>
+      <customHeaders>
+        <remove xdt:Transform="InsertIfMissing" name="X-Powered-By" />
+      </customHeaders>
+    </httpProtocol>
+  </system.webServer>
+</configuration>
