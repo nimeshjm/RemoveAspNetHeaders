@@ -2,9 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>RemoveASPNETheaders</id>
-        <version>1.0.0</version>
+        <version>1.0.0.1</version>
         <title>Remove ASP.NET headers</title>
         <authors>Nimesh Manmohanlal</authors>
+        <owners>Nimesh Manmohanlal</owners>
+        <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+        <projectUrl>https://github.com/nimeshjm/RemoveASPNETheaders</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>This package will reduce the server information that is disclosed to your visitors.
       It removes the following http headers:
@@ -12,6 +15,7 @@
       "X-AspNet-Version"
       "X-AspNetMvc-Version"
       "X-Powered-By"</description>
+        <summary>This package will reduce the server information that is disclosed to your visitors.</summary>
         <copyright>Digital Technologies Ltd.</copyright>
         <language>en-GB</language>
         <tags>security, pentest, asp.net, headers</tags>
