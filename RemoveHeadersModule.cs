@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Web;
-
+#if RELEASE45
+using System.Web.Mvc;
+#endif
 namespace RemoveHeaders
 {
     public class RemoveHeadersModule : IHttpModule
@@ -10,6 +10,9 @@ namespace RemoveHeaders
         public void Init(HttpApplication context)
         {
             context.PreSendRequestHeaders += OnContextOnPreSendRequestHeaders;
+#if RELEASE45
+            MvcHandler.DisableMvcResponseHeader = true;
+#endif
         }
 
         private void OnContextOnPreSendRequestHeaders(object sender, EventArgs args)

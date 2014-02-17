@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>RemoveASPNETheaders</id>
         <version>1.0.0</version>
@@ -7,17 +7,23 @@
         <authors>Nimesh Manmohanlal</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>This package will reduce the server information that is disclosed to your visitors.
-It removes the following http headers:
-"Server"
-"X-AspNet-Version"
-"X-AspNetMvc-Version"
-"X-Powered-By"</description>
+      It removes the following http headers:
+      "Server"
+      "X-AspNet-Version"
+      "X-AspNetMvc-Version"
+      "X-Powered-By"</description>
         <copyright>Digital Technologies Ltd.</copyright>
         <language>en-GB</language>
         <tags>security, pentest, asp.net, headers</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.0">
+                <dependency id="Microsoft.AspNet.Mvc" version="5.0.1" />
+            </group>
+        </dependencies>
     </metadata>
     <files>
         <file src="web.config.install.xdt" target="content\web.config.install.xdt" />
-        <file src="bin\Debug\RemoveHeaders.dll" target="lib\net20\RemoveHeaders.dll" />
+        <file src="bin\Release20\RemoveHeaders.dll" target="lib\net20\RemoveHeaders.dll" />
+        <file src="bin\Release40\RemoveHeaders.dll" target="lib\net40\RemoveHeaders.dll" />
     </files>
 </package>
