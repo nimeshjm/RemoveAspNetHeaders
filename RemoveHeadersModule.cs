@@ -3,7 +3,7 @@ using System.Web;
 #if RELEASE45
 using System.Web.Mvc;
 #endif
-namespace RemoveHeaders
+namespace DigitalTechnologies.RemoveHeaders
 {
     public class RemoveHeadersModule : IHttpModule
     {

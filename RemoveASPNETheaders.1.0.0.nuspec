@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>RemoveASPNETheaders</id>
-        <version>1.0.0.1</version>
+        <version>1.0.0.2</version>
         <title>Remove ASP.NET headers</title>
         <authors>Nimesh Manmohanlal</authors>
         <owners>Nimesh Manmohanlal</owners>
@@ -27,7 +27,7 @@
     </metadata>
     <files>
         <file src="web.config.install.xdt" target="content\web.config.install.xdt" />
-        <file src="bin\Release20\RemoveHeaders.dll" target="lib\net20\RemoveHeaders.dll" />
-        <file src="bin\Release40\RemoveHeaders.dll" target="lib\net40\RemoveHeaders.dll" />
+        <file src="bin\Release20\DigitalTechnologies.RemoveHeaders.dll" target="lib\net20\DigitalTechnologies.RemoveHeaders.dll" />
+        <file src="bin\Release45\DigitalTechnologies.RemoveHeaders.dll" target="lib\net45\DigitalTechnologies.RemoveHeaders.dll" />
     </files>
 </package>
