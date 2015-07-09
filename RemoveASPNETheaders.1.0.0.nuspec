@@ -18,7 +18,7 @@
         <summary>This package will reduce the server information that is disclosed to your visitors.</summary>
         <copyright>Digital Technologies Ltd.</copyright>
         <language>en-GB</language>
-        <tags>security, pentest, asp.net, headers</tags>
+        <tags>security, pentest, asp.net, headers, async, mvc, webapi</tags>
         <dependencies>
             <group targetFramework=".NETFramework4.0">
                 <dependency id="Microsoft.AspNet.Mvc" version="5.0.1" />
