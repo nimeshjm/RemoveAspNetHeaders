@@ -9,13 +9,13 @@ namespace DigitalTechnologies.RemoveHeaders
     {
         public void Init(HttpApplication context)
         {
-            context.PreSendRequestHeaders += OnContextOnPreSendRequestHeaders;
+            context.BeginRequest += BeginRequest;
 #if RELEASE45
             MvcHandler.DisableMvcResponseHeader = true;
 #endif
         }
 
-        private void OnContextOnPreSendRequestHeaders(object sender, EventArgs args)
+        private void BeginRequest(object sender, EventArgs args)
         {
             // Remove the "Server" HTTP Header from response
             var app = sender as HttpApplication;
